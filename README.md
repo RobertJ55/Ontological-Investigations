@@ -1,1 +1,1 @@
-Ontology from fundamental physics ot society
+Ontology from fundamental physics to society
