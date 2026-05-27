@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ontological-Investigations</title>
+<title>Comparison of quantum physical ontologies – Ontological-Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -98,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">About this site</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -111,15 +140,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#wavefunction-ontology" id="toc-wavefunction-ontology" class="nav-link active" data-scroll-target="#wavefunction-ontology">Wavefunction ontology</a>
+  <ul class="collapse">
+  <li><a href="#local-beables" id="toc-local-beables" class="nav-link" data-scroll-target="#local-beables">Local beables</a></li>
+  <li><a href="#distributed-charge-and-mass" id="toc-distributed-charge-and-mass" class="nav-link" data-scroll-target="#distributed-charge-and-mass">Distributed charge and mass</a></li>
+  <li><a href="#the-multiverse" id="toc-the-multiverse" class="nav-link" data-scroll-target="#the-multiverse">The multiverse</a></li>
+  </ul></li>
+  <li><a href="#bohmian-ontology" id="toc-bohmian-ontology" class="nav-link" data-scroll-target="#bohmian-ontology">Bohmian ontology</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ontological-Investigations</h1>
+<h1 class="title">Comparison of quantum physical ontologies</h1>
 </div>
 
 
@@ -136,10 +179,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>In discussing ontology in physics both the real and ideal spheres, as introduced by Nicolai Hartmann, play a role. The pure mathematics, applied to construct theory, is in the ideal sphere and the physical entities are in the real sphere. For example, self-adjoint operators exist in quantum theory and they represent observables (properties of things) that exist (this is claimed as a truth) in the physical world. However, it must always be kept in mind that truth claims are fallible.</p>
+<p>The ontologies discussed in this post are proposals for what exists and does not exist in real sphere interpretations of several formulations of quantum mechanics. These proposals are to be contrasted with the aspect of critical ontology that provides the structures for the investigation. A guiding statement, in the spirit of critical ontology, for this investigation, is that by Maudlin [1]:</p>
+<p>A physical theory should clearly and forthrightly address two fundamental questions: what there is, and what it does. This section explores a range of options on `what there is’ in theories that seek to produce identical or very similar empirical results. If the empirical results were not in agreement, then those theories that did not agree with experiment would be eliminated as not being true, although they could still be of theoretical interest. It is because theories with radically different existence claims can have the same empirical consequences that ontology investigation is interesting and relevant.</p>
+<p>In what follows familiarity with standard quantum physics, as taught to physics undergraduates, is assumed. If a reminder is needed then Jennan Ismael’s contribution to The Stanford Encyclopedia of Philosophy [2] may be helpful.</p>
+<p>In the multi-strata model of the real, the discussion that follows deals with physical entities in the inorganic layer. The theories are creations than reside in the objective part of the spiritual layer. There are theories that involve the psychic layer but they will not be considered in this post. The psychic layer can only come into play if there is someone there to have perceptions and thoughts.</p>
+<section id="wavefunction-ontology" class="level1">
+<h1>Wavefunction ontology</h1>
+<p>In standard quantum physics the wavefunction permits a range of possible events. Of the possible events one happens due to a measurement process. But what happens - what is the physics - when there is no measurement? Ghirardi, Rimini and Weber [3], (GRW) introduced a supplementary physical effect to standard quantum mechanics that randomly causes the collapse of the wavefunction, creating a way of obtaining macroscopic events from microscopic quantum systems, as will be explained below.</p>
+<section id="local-beables" class="level2">
+<h2 class="anchored" data-anchor-id="local-beables">Local beables</h2>
+<p>John Bell [4], uses his concept of local beables [5] to propose that theses random events are what give effect to local beables. Bell’s local beables are a significant development as it was a move away from focusing on what is observed to what exists. The locality of the beable, however, is still tied to the observation that particles such as electrons or photons appear locally in experimental situations. `Beable’ also implies a process of coming into being. So, a particle may exist in an interaction or detection but what of the existence of the particle as such? The concept of local beables in general leaves such questions unanswered. The application to GRW will now be considered.</p>
+<p>The GRW mechanism is as follows. Let the initial the wave function be</p>
+<p><span class="math display">\[\psi (t, q_1, q_2, \dots, q_N)\]</span></p>
+<p><span class="math inline">\(t\)</span> is time and <span class="math inline">\(q_1, q_2, \dots, q_N\)</span> are position coordinates. The probability per unit time for a GRW spontaneous collapse event is <span class="math inline">\(N/\tau\)</span>, where <span class="math inline">\(\tau\)</span> is a new constant of nature, chosen to be in the order of <span class="math inline">\(10^{14}\)</span> seconds. The collapsed wavefunction is</p>
+<p><span class="math display">\[\psi' = \frac{j(x - q_n ) \psi(t, \dots)}{R_n (x)},\]</span></p>
+<p>where <span class="math inline">\(q_n\)</span> is chosen at random (probability <span class="math inline">\(=1/N\)</span>)</p>
+<p>The definition of the weighting function <span class="math inline">\(j\)</span> introduces at least one further constant of nature. This is tuned to be in the region of <span class="math inline">\(10^{-5}\)</span>cm to preserve the observed microscopic effects while generating the commonly observed macroscopic world. There is nothing but the wavefunction and the collapse is part of its dynamics.</p>
+<p>However, the GRW collapse events happen to the wavefunction, not something else. The wavefunction is then well localized in ordinary space at, at most, a mesoscopic scale. Each is centred on a particular space-time point <span class="math inline">\((x, t)\)</span>. So, Bell proposes these events as providing the local beables of the theory. This would make the beables appearances of the object (Sosein) not a representation of the object itself (Dasein). That being so, these local beables are sparse events in a system of particles and would be very rare for a small number of particles. That is, in the time scales typical of experiment nothing would happen outside the detector. Entanglement provides the mechanism for the commonly experienced existence of macroscopic bodies such as detectors. Note that the spontaneous event is a reduction of the wavefunction. This leaves open the relationship to the charge, mass and spin carrying particle. In addition, if this spontaneously reduced wavefunction is what exists then its relation to the actual particle still needs explanation. Implicitly there is a return to Born probability mechanism but without clarity on this the ontology is incomplete.</p>
+</section>
+<section id="distributed-charge-and-mass" class="level2">
+<h2 class="anchored" data-anchor-id="distributed-charge-and-mass">Distributed charge and mass</h2>
+<p>An alternative wavefunction ontology, but still within GRW theory, proposes that the particle has only a <code>fuzzy'' position, with</code>more of it’’ located in places that correspond to its location in configurations which are assigned high amplitudes by the wave-function. This suggests a picture in which the particle is “smeared out” in space, and the effect of the GRW hit is to concentrate most of the smear within <span class="math inline">\(10^{-5}\)</span>cm of a particular location. In this ontology the charge and mass of an electron would presumably be distributed across the support of the wavefunction. This theory does propose that a particle exists as such and is extended in space. This therefore provides a more complete ontology.</p>
+</section>
+<section id="the-multiverse" class="level2">
+<h2 class="anchored" data-anchor-id="the-multiverse">The multiverse</h2>
+<p>A third set of theories are a development of Everett’s relative state formulation of quantum mechanics [6], that are commonly known as many worlds or multiverse interpretations. In this case just the evolving wavefunction features as the candidate entity. The wave function describes all the possibilities for the system and all possibilities happen. This gives rise to many (an infinity of) physical worlds. Wallace [7] provides a comprehensive discussion of this set of theories.</p>
+<p>Everett’s criterion for the real existence of a branch is: If the wavefunction <span class="math inline">\(\psi\)</span> of a system is a superposition <span class="math inline">\(a\phi+ b\theta\)</span> then the “branches” <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\theta\)</span> exist, and in each branch, everything physically exists that would exist if that were the entire state of the system. However, there are many ways to represent a function as a linear representation of other functions. Some further structure is required to provide a path to candidates for entities. One approach is an appeal to decoherence, achieved through entanglement. Here the quantity capturing possible states of affairs is <span class="math inline">\(|\psi|^2\)</span> and entanglement can pick out specific decomposition that depends on the physics of the interaction</p>
+<p><span class="math display">\[ |\psi |^2 \rightarrow |a\phi|^2+|b\theta|^2\]</span></p>
+<p>That is, there is no interference term. However, the more detailed theory [7] works with approximate decoherence.</p>
+<p>Examining critically the ontology of many worlds, it shares some of the issues with the GRW theory, especially in the Bell beables version. The smeared, or extended particle interpretation is not available to it but a complete theory must show how familiar phenomena emerge. According to Wallace [7]</p>
+<p>A macro-object is a pattern, and the existence of a pattern as a real thing depends on the usefulness–in particular the explanatory power and predictive reliability–of theories which admit that pattern in their ontology.</p>
+<p>What makes a collection of electrons, protons, and neutrons a particle accelerator, rather than something else, has to do with how the microscopic parts are arranged, or structured. A significant part of that structure is the spatial arrangement of the microscopic parts through time. However, a quantum wavefunction contains no microscopic parts localized in space-time, so its behaviour cannot create a macroscopic particle accelerator in anything like the way the behaviour of localized electrons, neutrons, and protons can. The problem remains of how to populate familiar space-time with locally existing entities.</p>
+</section>
+</section>
+<section id="bohmian-ontology" class="level1">
+<h1>Bohmian ontology</h1>
+<p>Bohmian mechanics [8], [9], is a formulation of quantum mechanics that is constructed to give the same results as that of standard quantum mechanics but in which particles have continuous trajectories. For a discussion of the theory’s ontology the mathematics of how this is accomplished is not relevant. The ontology includes:</p>
+<ul>
+<li>Particles with a well-defined position x(t) which varies continuously and is causally determined.</li>
+<li>A guiding field that is derived from the solution of Schrödinger’s equation, so that it too changes continuously and is causally determined.
+<ul>
+<li>The particle is never separate from this guiding field that fundamentally affects it. There is no dynamics without this field.</li>
+<li>The guiding eld is not affected by the particle.</li>
+</ul></li>
+</ul>
+<p>The Bohmian mechanics emphasises that the particle has a continuous trajectory and that these trajectories exist in the physical domain. The particle does not follow the laws of classical dynamics but is guided by a field that is directly derived from the solution to the Schrödinger equation. The claims made about what exists are not made within a wider ontology, but simply posit particles and guiding elds. It is tacitly assumed that to exist is to physically exist.</p>
+<p>The distinction has been made between existing in the theory (the ideal sphere) and existing physically (the real sphere). There is a version Bohmian mechanics in which the guiding field is not in the real sphere of the ontology but in the ideal sphere. The guiding field is then a law governing the behaviour of the particle but not a physical entity like the particle. Allori [10] presents this as a primitive ontology. Allori claims that a physical theory</p>
+<blockquote class="blockquote">
+<p>… will be about a given primitive ontology: entities living in three-dimensional space or in space-time. They are the fundamental building blocks of everything else, and their histories through time provide a picture of the world according to the theory (the scientific image).</p>
+</blockquote>
+<p>These primitive variables describe what exists in the inorganic layer of the real sphere whereas non-primitive variables exist in the physical theories in the ideal sphere. In a physical situation where no person is active there is no mechanism for the ideal sphere to influence the real sphere. The primitive ontology must therefore include the guiding field so that Bohmian mechanics can operate as a fully-fledged physical theory. However, the wavefunction that gives rise to the guiding field is a function on configuration space, rather than the three-dimensional space of natural phenomena.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Critical ontology, as an investigative method, has now been applied to a range of proposals that claim the physical existence of particle or wavefunctions or both. Of these it is Bohmian mechanics, with particles and guiding fields as physical entities, that provides the most near to complete physical ontology.</p>
+<p>A major deficiency in GRW theories is that the ontological status of the spontaneous reduction of the wavefunction. The mathematical description is of a stochastic process but it is not clear what this process is a property of. This will need a discussion of dispositional properties.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>[1] Tim Maudlin. (2019) Philosophy of Physics: Quantum Theory. Princeton University Press., 2019.</p>
+<p>[2] Jenann Ismael. Quantum Mechanics. In: The Stanford Encyclopedia of Philosophy. Ed. by Edward N. Zalta. Fall 2021. Metaphysics Research Lab, Stanford University, 2021.</p>
+<p>[3] G. C. Ghirardi, A. Rimini, and T. Weber. Unified dynamics for microscopic and macroscopic systems. In: Phys. Rev.&nbsp;D 34 (2 July 1986), pp.&nbsp;470491.</p>
+<p>[4] John S. Bell. Are there quantum jumps? In: Speakable and Unspeakable in Quantum Mechanics: Collected Papers on Quantum Philosophy. 2nd ed.&nbsp;Cambridge University Press, 2004, pp.&nbsp;201212.</p>
+<p>[5] John S. Bell. The theory of local beables. In: Speakable and Unspeakable in Quantum Mechanics: Collected Papers on Quantum Philosophy. 2nd ed.&nbsp;Cambridge University Press, 2004, pp.&nbsp;52-62.</p>
+<p>[6] Hugh Everett. “Relative State” Formulation of Quantum Mechanics. In: Rev.&nbsp;Mod. Phys. 29 (3 July 1957), pp.&nbsp;454-462.</p>
+<p>[7] David Wallace. The Emergent Multiverse: Quantum Theory according to the Everett Interpretation. Oxford University Press, 2012.</p>
+<p>[8] David Bohm and Basil Hiley. The Undivided Universe. 1st ed.&nbsp;Taylor and Francis, 2006.</p>
+<p>[9] Detlef Dürr and Stefan Teufel. Bohmian Mechanics: The Physics and Mathematics of Quantum Theory. Springer-Verlag, 2009.</p>
+<p>[10] Valia Allori. Primitive Ontology and the Structure of Fundamental Physical Theories. In: The Wave Function: Essays in the Metaphysics of Quantum Mechanics. Ed. by Alyssa Ney and David Z. Albert. Oxford University Press, 2013.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
