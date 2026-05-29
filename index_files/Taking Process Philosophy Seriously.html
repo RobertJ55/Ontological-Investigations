@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ontological Investigations – Ontological-Investigations</title>
+<title>Taking process philosophy seriously – Ontological-Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,12 +70,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -85,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ontological-Investigations</span>
     </a>
   </div>
@@ -96,11 +122,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About this site</span></a>
   </li>  
 </ul>
@@ -119,10 +145,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link active" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#quantum-physics" id="toc-quantum-physics" class="nav-link" data-scroll-target="#quantum-physics">Quantum Physics</a></li>
+  <li><a href="#the-philosophical-landscape---physical-layer" id="toc-the-philosophical-landscape---physical-layer" class="nav-link active" data-scroll-target="#the-philosophical-landscape---physical-layer"><strong>The Philosophical Landscape - physical layer</strong></a></li>
+  <li><a href="#alternative-mechanisms" id="toc-alternative-mechanisms" class="nav-link" data-scroll-target="#alternative-mechanisms"><strong>Alternative Mechanisms</strong></a></li>
+  <li><a href="#the-whiteheadian-scheme" id="toc-the-whiteheadian-scheme" class="nav-link" data-scroll-target="#the-whiteheadian-scheme"><strong>The Whiteheadian Scheme</strong></a></li>
+  <li><a href="#key-terms-in-process-and-reality" id="toc-key-terms-in-process-and-reality" class="nav-link" data-scroll-target="#key-terms-in-process-and-reality"><strong>Key Terms in Process and Reality</strong></a></li>
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography"><strong>Bibliography</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -131,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
+<h1 class="title">Taking process philosophy seriously</h1>
 </div>
 
 
@@ -148,59 +175,101 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="layered-ontology" class="level1">
-<h1>Layered ontology</h1>
-<p><img src="./images/Layers.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./index_files/strata.html">Strata of being</a></li>
-</ul>
+<section id="the-philosophical-landscape---physical-layer" class="level1">
+<h1><strong>The Philosophical Landscape - physical layer</strong></h1>
+<p>It was in <em>Taking Heisenberg’s Potentia Seriously</em> [1] that I first encountered Ruth Kastner’s <strong>Relativistic Transactional Interpretation (RTI)</strong>. Michael Epperson, one of the co-authors, has written his own book [2] on quantum mechanics that makes extensive use of the “potentiality” concept. This draws heavily on Whitehead’s <strong>Process Philosophy</strong> but does not provide new physics, relying instead on a decoherence narrative used by many others. But this does not work.</p>
+<p>Kastner’s transactions offer some novel physics in the relativistic formulation, involving an “offer and response” process. In addition, there is an interplay between <strong>space-time events</strong> and the quantum substratum <em>potentia</em>. Whitehead’s process philosophy (which he misleadingly called a “philosophy of organism”) may possibly provide, or be adapted to provide, a coherent cosmology encompassing quantum processes and events, but the physics of events needs to be formulated as well.</p>
 </section>
-<section id="process-ontology" class="level1">
-<h1>Process ontology</h1>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">graph TD
-    A[Eternal Objects: Pure Potentials] --&gt; B(Prehension: Interaction)
-    S[Subjective Aim: Propensity] --&gt; B
-    
-    B --&gt; C{Concrescence: The Process}
-    N[Nomic Causality: Laws] --&gt; C
-    SC[Singular Causality: Local Events] --&gt; C
-    
-    C --&gt; D[Actual Entity: The Quantum Event]
-    D --&gt; E[Creativity: Novelty in the Universe]
-    E --&gt;|Becomes past data for| B
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<ul>
-<li><a href="./index_files/Taking Process Philosophy Seriously.html">Taking process philosophy seriously</a></li>
-</ul>
+<section id="alternative-mechanisms" class="level1">
+<h1><strong>Alternative Mechanisms</strong></h1>
+<p>The Relativistic Transactional Interpretation is not the only approach to providing a mechanism for quantum state reduction—leading to events—that is not <em>ad hoc</em>. The <strong>“Events, Trees, and Histories” (ETH)</strong> theory, as developed by Jürg Fröhlich and collaborators, also provides a mechanism. As with RTI, their approach requires interaction with massless modes (e.g., photons). However, retro-causality is not invoked.</p>
+<p>The key concept in ETH is the <strong>“Principle of Diminishing Potentialities.”</strong> This could be interpreted as adding what is missing from Kochen’s reformulation of QM, but that is not a point that they make. To provide a rounded understanding of a physics that includes potentiality and processes leading to events, a cosmology is needed—an all-encompassing philosophical scheme.</p>
 </section>
-<section id="probability-and-potentiality" class="level1">
-<h1>Probability and potentiality</h1>
-<p><img src="./images/Kol_axioms.png" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Potentiality and probability.html">Potentiality and probability</a></li>
-<li><a href="./index_files/The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./index_files/Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-<li><a href="./index_files/The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-</ul>
+<section id="the-whiteheadian-scheme" class="level1">
+<h1><strong>The Whiteheadian Scheme</strong></h1>
+<p>An all-encompassing philosophical scheme that includes events and processes at the microscopic, mesoscopic, and macroscopic scales can only be speculative; but speculation should not be arbitrary. Following Whitehead [3]:</p>
+<blockquote class="blockquote">
+<p>“…the philosophical scheme should be coherent, logical, and, in respect to its interpretation, applicable and adequate. Here ‘applicable’ means that some items of experience are thus interpretable, and ‘adequate’ means that there are no items incapable of such interpretation. ‘Coherence,’ as here employed, means that the fundamental ideas, in terms of which the scheme is developed, presuppose each other so that in isolation they are meaningless… The term ‘logical’ has its ordinary meaning, including ‘logical’ consistency, or lack of contradiction, the definition of constructs in logical terms, the exemplification of general logical notions in specific instances, and the principles of inference.”</p>
+</blockquote>
+<hr>
 </section>
-<section id="quantum-physics" class="level1">
-<h1>Quantum Physics</h1>
-<p><img src="./images/Onto1.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./index_files/Quantum-chance.html">Quantum chance</a></li>
-</ul>
+<section id="key-terms-in-process-and-reality" class="level1">
+<h1><strong>Key Terms in Process and Reality</strong></h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technical Term</th>
+<th>Explanation</th>
+<th>Relevance to Quantum Physics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Actual Entity / Occasion</strong></td>
+<td>The fundamental unit of reality; a single, concrete event or experience.</td>
+<td>Quantum events or interactions. Each event is a discrete occurrence.</td>
+</tr>
+<tr class="even">
+<td><strong>Prehension</strong></td>
+<td>The process by which an actual entity “grasps” or is influenced by other entities.</td>
+<td>Particles interacting through fundamental forces; influencing one another’s states.</td>
+</tr>
+<tr class="odd">
+<td><strong>Eternal Object</strong></td>
+<td>Abstract entities or pure potentials (similar to Platonic forms) that actual entities can realize.</td>
+<td>Properties like position or momentum. Represented by self-adjoint operators, <strong>not</strong> the wavefunction.</td>
+</tr>
+<tr class="even">
+<td><strong>Process</strong></td>
+<td>Reality as dynamic “becoming” rather than static “being.”</td>
+<td>The flux of particles and fields governed by probabilistic laws.</td>
+</tr>
+<tr class="odd">
+<td><strong>Creativity</strong></td>
+<td>The ultimate principle representing the continuous creation of new actual entities.</td>
+<td>Inherent unpredictability and novelty; related to creation operators in QFT.</td>
+</tr>
+<tr class="even">
+<td><strong>Singular Causality</strong></td>
+<td>Specific, individual causes contributing to a single event.</td>
+<td>Specific interactions leading to the collapse of a quantum state.</td>
+</tr>
+<tr class="odd">
+<td><strong>Nomic Causality</strong></td>
+<td>General or universal causes (scientific laws).</td>
+<td>General laws like the Heisenberg equation (<span class="math inline">\(i\hbar \frac{d}{dt}A = [A, H]\)</span>).</td>
+</tr>
+<tr class="even">
+<td><strong>Organism</strong></td>
+<td>The interconnected, interdependent nature of reality.</td>
+<td>The holistic view of systems where the whole is more than the sum of its parts.</td>
+</tr>
+<tr class="odd">
+<td><strong>Concrescence</strong></td>
+<td>The process of an entity coming into being by integrating many prehensions.</td>
+<td>How states evolve and integrate influences to result in a specific event.</td>
+</tr>
+<tr class="even">
+<td><strong>Subjective Aim</strong></td>
+<td>The inherent goal or purpose an entity strives for in its “becoming.”</td>
+<td>Propensity theory; how an outcome is selected from a probability distribution.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="bibliography" class="level1">
+<h1><strong>Bibliography</strong></h1>
+<ol type="1">
+<li>Ruth E. Kastner, Stuart Kauffman, and Michael Epperson, <em>Taking Heisenberg’s Potentia Seriously</em>, International Journal of Quantum Foundations, March 27, 2018, Vol. 4, Issue 2, pp.&nbsp;158-172.</li>
+<li>Michael Epperson, <em>Quantum Mechanics and the Philosophy of Alfred North Whitehead</em>, Fordham University Press, 2004.</li>
+<li>Alfred N. Whitehead, <em>Process and Reality</em>, corrected edition, Simon and Schuster, May 2010 (First published 1929).</li>
+</ol>
 
 
 </section>
