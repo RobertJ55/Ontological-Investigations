@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Potentiality and Probability – Ontological-Investigations</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ontological-Investigations</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About this site</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#tendencies" id="toc-tendencies" class="nav-link active" data-scroll-target="#tendencies">Tendencies</a>
+  <ul class="collapse">
+  <li><a href="#example-adapted-from-anjum-and-mumford" id="toc-example-adapted-from-anjum-and-mumford" class="nav-link" data-scroll-target="#example-adapted-from-anjum-and-mumford">Example (adapted from Anjum and Mumford)</a></li>
+  </ul></li>
+  <li><a href="#initial-discussion-of-probability" id="toc-initial-discussion-of-probability" class="nav-link" data-scroll-target="#initial-discussion-of-probability">Initial Discussion of Probability</a></li>
+  <li><a href="#probability-vs.-necessity" id="toc-probability-vs.-necessity" class="nav-link" data-scroll-target="#probability-vs.-necessity">Probability vs.&nbsp;Necessity</a>
+  <ul class="collapse">
+  <li><a href="#the-rai-stone-example" id="toc-the-rai-stone-example" class="nav-link" data-scroll-target="#the-rai-stone-example">The Rai Stone Example</a></li>
+  </ul></li>
+  <li><a href="#probabilities-and-chance" id="toc-probabilities-and-chance" class="nav-link" data-scroll-target="#probabilities-and-chance">Probabilities and Chance</a></li>
+  <li><a href="#radioactive-decay-and-quantum-theory" id="toc-radioactive-decay-and-quantum-theory" class="nav-link" data-scroll-target="#radioactive-decay-and-quantum-theory">Radioactive Decay and Quantum Theory</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Potentiality and Probability</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>As outlined in the previous post, Barbara Vetter (<em>Potentiality from Dispositions to Modality</em>, Oxford University Press, 2015) developed the concept of potentiality in her theory of dispositional powers. In that theory, potentials are dispositions that are responsible for the manifestation of possibilities. The possibilities then tend to become actual events or states of affairs. The concept of “potential” in philosophy, in a sense close to that discussed here, goes back at least to Aristotle in <em>Metaphysics</em> Book <span class="math inline">\(\Theta\)</span>.</p>
+<p>In contrast, probabilities are weightings summing to one that describe in what proportion the possibilities tend to appear. I propose that the potential underpins the actual appearance of the possibilities while probability shapes it. This will be discussed further in this post.</p>
+<p>Barbara Vetter proposed a formal definition of possibility in terms of potentiality:</p>
+<blockquote class="blockquote">
+<p><strong>POSSIBILITY:</strong> It is possible that <span class="math inline">\(p =_{def}\)</span> Something has an iterated potentiality for it to be the case that <span class="math inline">\(p\)</span>.</p>
+</blockquote>
+<p>So, it is further proposed that the probabilities are the weights that can be measured through this iteration using the frequency of appearances of each possibility. Note that this indicates how probabilities can be measured, but it is not a definition of probability.</p>
+<p>In the field of disposition research, there is an unfortunate proliferation of terms meaning roughly the same thing. The concept of “power” brings out a disposition’s causal role, but so does “potential.” As technical terms in the field, both are dispositions. Now “tendency” will also be introduced, and it is often used as yet another flavor of disposition.</p>
+<hr>
+<section id="tendencies" class="level1">
+<h1>Tendencies</h1>
+<p>Barbara Vetter mentions tendencies in passing in her 2015 book on potentiality and, although she discusses graded dispositions, tendencies are not a major topic in that work. In “What Tends to Be: The Philosophy of Dispositional Modality,” Rani Lill Anjum and Stephen Mumford (2018) provide an examination of the relationship between dispositions and probabilities while developing a substantial theory of dispositional tendency.</p>
+<p>In their treatment, powers are understood as disposing towards their manifestations, rather than necessitating them. This is consistent with Vetter’s potentials. Tendencies are powers that do not necessitate manifestations, but nonetheless, the power will iteratively cause the possibility to be the case.</p>
+<p>In common usage, a contingency is something that might possibly happen in the future. That is, it is a possibility. A more technical but still common view is that contingency is something that could be either true or false. This captures an aspect of possibility, but not completely because there is no role for <strong>potentiality</strong>; something responsible for the possibilities. There is also logical possibility in which anything that does not imply a contradiction is logically possible. This concept may be fine for logic, but in this discussion, it is possibilities that can appear in the world that are under consideration. Here, an actual possibility needs a potentiality to tend to produce it.</p>
+<section id="example-adapted-from-anjum-and-mumford" class="level2">
+<h2 class="anchored" data-anchor-id="example-adapted-from-anjum-and-mumford">Example (adapted from Anjum and Mumford)</h2>
+<p>Struck matches tend to light. Although disposed to light when struck, we all know that there is no guarantee that they will light as there are many times a struck match fails to light. But there is an iterated potentiality for it to be the case that the match lights. The lighting of a struck match is more than a mere possibility or a logical possibility. There are many mere possibilities towards which the struck match has no disposition—that is, no potential in the match towards struck matches melting, for instance.</p>
+<p>Iterated potentiality provides the tendency for possible outcomes to show some patterns in their manifestation. In very controlled cases, the number of cases of success in iterations of match striking could provide a measure of the strength of the power that is this potentiality. This would require a collection of matches that are essentially the same.</p>
+<hr>
+</section>
+</section>
+<section id="initial-discussion-of-probability" class="level1">
+<h1>Initial Discussion of Probability</h1>
+<p>Anjum and Mumford introduce their discussion of probability through a simple example that builds on a familiar understanding of dispositional tendencies associated with fragility.</p>
+<blockquote class="blockquote">
+<p>“The fragility of a wine glass, for instance, might be understood to be a strong disposition towards breakage with as much as 0.8 probability, whereas the fragility of a car windscreen probabilities its breaking to the lesser degree 0.3. Furthermore, it is open to a holder of such a theory to state that the probability of breakage can increase or decrease in the circumstances and, indeed, that the manifestation of the tendency occurs when and only when its probability reaches one.”</p>
+</blockquote>
+<p>This example is merely an introduction and needs further development, but already the claim that “the manifestation of the tendency occurs when and only when its probability reaches one” shows that it is not a model for objective probability. What is needed is a theory of dispositions that explains stable probability distributions. Of course, if the glass is broken, then the probability of it being broken is <span class="math inline">\(1\)</span>. However, this has nothing to do with the dispositional tendency to break. What is needed is a systemic understanding of the relationship between the strength of a dispositional tendency and the values or, in the continuous case, shape of a probability distribution.</p>
+<p>In the quoted example above, each power is to be understood in terms of a probability of the occurrence of a certain effect, which is given a specific value. The fragility of a wine glass, for instance, might be understood to be a strong disposition towards breakage with as much as <span class="math inline">\(0.8\)</span> probability, whereas the fragility of a car windscreen is less, and the probability of its breaking is a lesser degree <span class="math inline">\(0.3\)</span>. But given a wine glass or windscreen produced to certain norms and standards, it would be expected that the disposition towards breakage would be quite stable. A glass with a different disposition would be a different glass.</p>
+<p>Anjum and Mumford claim that, in some understandings, the manifestation of a possibility occurs when and only when its probability reaches one (see Popper, <em>A World of Propensities</em>, 1990: 13, 20). This is a misunderstanding of how probability works. Popper distinguished clearly between the mathematical probability measure and what he called the physical propensity, which is more like a force, but Popper does limit a propensity to have a strength of at most <span class="math inline">\(1\)</span>. As I will attempt to show below, Popper, in proposing the propensity interpretation of objective probabilities, oversimplifies the relationship between dispositions and probabilities. This confusion led Humphreys to draft a paper (<em>The Philosophical Review</em>, Vol. XCIV, No.&nbsp;4, October 1985) to show that propensities cannot be probabilities. As indeed they are not. They are dispositions. That would leave open the proposition that probabilities are dispositional tendencies, but that also will turn out to be untenable.</p>
+<p>The proposal by Anjum and Mumford that powers can <strong>over-dispose</strong> does seem to be sound. Over-disposing is where there is a stronger magnitude than what is minimally needed to bring about a particular possibility. This indicates that there is a difference between the notion of having a power to some degree and the probability of the power’s manifestation occurring. Among other conclusions, this also shows that the dispositional tendency does not reduce to probability, preserving its status as a potential.</p>
+<p>Anjum and Mumford continue the discussion using “propensity” as having a tendency to some degree, where degree is non-probabilistically defined. Anjum and Mumford use the notions of “power,” “disposition,” and “tendency” more or less interchangeably, whereas an object may have a power to a degree, there are powers that are simply properties. In what follows, I will try to eliminate the use of “propensity,” except where commenting on the usage of others, and use “tendency” to qualify either “power,” “potential,” or “disposition” rather than let it stand on its own.</p>
+<hr>
+</section>
+<section id="probability-vs.-necessity" class="level1">
+<h1>Probability vs.&nbsp;Necessity</h1>
+<p>A probability always takes a value within a bounded inclusive range between zero and one. If probability is <span class="math inline">\(1\)</span>, then probability theory stipulates that it is “almost certain” (occurs except for a set of cases of measure zero). In contrast to what Anjum and Mumford claim, it is not natural to interpret this as necessity because there are exceptions. For cases where there are only a finite set of possibilities, then probability <span class="math inline">\(1\)</span> does mean that there are no exceptions. But as this is a special case in applied probability theory, there is no justification in equating it with logical or metaphysical necessity.</p>
+<p>A power must be strong enough to reach the threshold to make the possibilities actual. Once the power is strong enough, then the probability distribution over the possibilities may be stable or affected by other aspects of the situation. So, instead of understanding powers and their degrees of strength as probabilistic, powers and their tendencies towards certain manifestations are the underpinning grounds of probabilities. Consider the example of tossing a coin.</p>
+<p>A coin when tossed has the potential to fall either heads or tails. This tendency to fall either way can be made symmetric and then the coin is “fair.” From which probability weightings of <span class="math inline">\(1/2\)</span> for each outcome (taking account of the tossing mechanism) can be assumed and then confirmed by measuring the proportion of outcomes on iteration. The reason why the head and the tail events are equally probable statistically, when a fair coin is tossed, is that the coin is equally disposed towards those two outcomes due to its physical constitution. The probability weightings derive, in this example, from a symmetry in the potentiality, which in turn derives from the physical composition and detailed geometry of the coin.</p>
+<section id="the-rai-stone-example" class="level2">
+<h2 class="anchored" data-anchor-id="the-rai-stone-example">The Rai Stone Example</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/rai_stones.jpeg" class="img-fluid figure-img"></p>
+<figcaption>https://en.m.wikipedia.org/wiki/Rai_stones</figcaption>
+</figure>
+</div>
+<p>Consider a society that uses very large stone discs as currency (e.g., <a href="https://en.m.wikipedia.org/wiki/Rai_stones">Rai stones</a>). On examination of the disc, it would be possible to conjecture that if it were tossed then there would be two possible outcomes and that those outcomes are equally likely. But this disposition is not realized because of the effort required to construct the tossing mechanism, as such a stone may weigh several metric tons. The enabling disposition that would give rise to the iteration of possibilities would have been this missing tossing mechanism. It is not a property of the disc.</p>
+<p>The manifestation of the dispositional tendency of the disc to come to lie in one of two states needs an external mechanism that is disposed through design to toss the coin in a certain way. If the mechanism is constructed, it may be too weak. It may tend to only flip the coin once, giving a sequence such as:</p>
+<p><span class="math inline">\(... T H T H T H H T H T H T H T H T H T H ...\)</span></p>
+<p>That would give a frequency of T close to <span class="math inline">\(1/2\)</span>, but the sequence does not exhibit the potential for random outcomes to which the coin is disposed.</p>
+<hr>
+</section>
+</section>
+<section id="probabilities-and-chance" class="level1">
+<h1>Probabilities and Chance</h1>
+<p>From the above: potential and possibility are more fundamental than (or prior to) probability. Both are needed to construct and explain objective probability. The alternative, subjective probability, is based on beliefs about possibilities, but that is not the same thing as what is actually possible and how things will appear independently of anyone’s beliefs or judgments.</p>
+<p>In this blog, I have already referred to a dispositional tendency beginning to explain objective probabilities in quantum mechanics. The term “propensity” has been used to describe these probabilities. I now think that was wrong. Propensity should be reserved for the dispositional tendency that is responsible for the probabilities to avoid this term merging the underpinning dispositional elements and probability structure. Anjum and Mumford claim that they have made a key contribution to clarifying the relationship between dispositional tendencies and probability through their analysis of <strong>over-disposition</strong>.</p>
+<p>Anjum and Mumford claim “information is lost in the putative conversion of propensities to probabilities,” but only if the dispositional grounding of probabilities is forgotten. Their discussion is strongly influenced by their interest in application to medical evidence where a major goal is reduction of uncertainty. Anjum and Mumford propose two rules on how dispositions and probability relate:</p>
+<ol type="1">
+<li>The more something disposes towards an effect <span class="math inline">\(e\)</span>, the more probable is <span class="math inline">\(e\)</span>, <em>ceteris paribus</em>; and the more something over-disposes <span class="math inline">\(e\)</span>, the closer we approach probability <span class="math inline">\(P(e) = 1\)</span>.</li>
+<li>There is a nonlinear “diminishing return” in over-disposing. E.g., if over-disposing <span class="math inline">\(e\)</span> by a magnitude <span class="math inline">\(x2\)</span> produces a probability <span class="math inline">\(P(e) = 0.98\)</span>, over-disposing <span class="math inline">\(x3\)</span> might increase that probability “only” to <span class="math inline">\(P(e) = 0.99\)</span>, and over-disposing <span class="math inline">\(x4\)</span> “only” to <span class="math inline">\(P(e) = 0.995\)</span>, and so on.</li>
+</ol>
+<p>While these rules are fine as propositions, they miss the mark in explaining the relationship between dispositions and probability. In the coin tossing example, strengthening the mechanism is not about strengthening one outcome. Over-disposing does provide support for the distinction between the strength of the disposition and value of the probability, but the relationship between underpinning potentials, dispositional mechanisms, and the iterated outcomes needs to be made clear.</p>
+<hr>
+</section>
+<section id="radioactive-decay-and-quantum-theory" class="level1">
+<h1>Radioactive Decay and Quantum Theory</h1>
+<p>Anjum and Mumford also discuss coin tossing and make substantially the same points as I made above. However, having clarified the distinction between propensity and probability, they revert to using the term propensity in a way that risks confusing the concepts of dispositional tendency and probabilities with random outcomes. They say “50% propensity” rather than “50% probability.” They then introduce the term “chance” that they relate to outcomes in some specified situations. Propensity is then reserved by them for potential probability while chance is the probability of an outcome in a situation. This is more confusing than helpful.</p>
+<p>Anjum and Mumford go on to a discussion of radioactive decay that is known to be described by quantum theory. They make no mention of quantum theory (this will be corrected by them in Chapter 4) and strangely claim that radioactive decay is not probabilistic. The probability distributions derived from quantum mechanics unambiguously give the probability of decay per unit time. There are, per unit time, two possibilities: “decay” or “no decay.” Their error is to claim “only one manifestation type” (decay) and from this that there is only one possibility. Ignoring quantum mechanics, they write:</p>
+<blockquote class="blockquote">
+<p>“The reason it is tempting to think of radioactive decay as probabilistic is that there is certainly a distinct tendency to decay that varies in strength for different kinds of particles, where that strength is specified in terms of a half-life (the time at which there is a 50/50 chance of decay having occurred).”</p>
+</blockquote>
+<p>But no, the reason to think that radioactive decay is probabilistic is that our best theory of nuclear phenomena explains it in terms of probabilities. This misunderstanding leads them to introduce the concept of indeterministic propensities. However they have arrived at the concept, it is left open as to whether there are non-probabilistic indeterminate powers, but radioactive decay is not an example.</p>
+<hr>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>The examples of the concept of chance provided by Anjum and Mumford can be derived in their examples from a correct application of probability theory. Chance is often used as a term for “objective probability,” and I have done so in previous posts. I will continue to follow that usage and exploit the clarification obtained from the analysis above that shows that objective probability depends on the possibilities that are properties of an object. The manifestation of these possibilities may require an enabling mechanism. The statistical regularities displayed by these manifestations on iteration are due primarily to the physical properties of the object unless the enabling mechanism is badly designed.</p>
+<p>The term “propensity” has given rise to much confusion in the literature. Now that we are reaching an explanation of objective probability, the term “propensity” might better be avoided.</p>
+<p>I propose that the model of objective probability is that:</p>
+<blockquote class="blockquote">
+<p><strong>OBJECTIVE PROBABILITY:</strong> An object has probabilistic properties if it is physically constituted so that it has a potential to manifest possibilities that show statistical regularities.</p>
+</blockquote>
+<p>It is possible to describe statistical regularities without invoking the term “probability.” Although some criticism of Anjum and Mumford is implied here, I recognize that their contribution has done much to disentangle considerations about the strength of dispositions that describe tendencies from a direct interpretation as probabilities. However, the value of the three distinctions they have identified is mixed:</p>
+<ol type="1">
+<li><strong>Chance and probability</strong> are not fundamentally distinct and just require a correct application of probability theory.</li>
+<li><strong>Probabilistic dispositional tendencies</strong> are distinct from non-probabilistic dispositional tendencies: this is a real and fruitful distinction.</li>
+<li><strong>Deterministic and indeterministic dispositional tendencies</strong> also provide a useful distinction, but it remains to be seen whether there are fundamental non-probabilistic indeterministic dispositions.</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/RobertJ55\.github\.io\/Ontological-Investigations\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

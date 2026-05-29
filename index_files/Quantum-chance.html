@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Quantum chance – Ontological-Investigations</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ontological-Investigations</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About this site</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#quantum-states" id="toc-quantum-states" class="nav-link active" data-scroll-target="#quantum-states">Quantum States</a>
+  <ul class="collapse">
+  <li><a href="#probability-measures" id="toc-probability-measures" class="nav-link" data-scroll-target="#probability-measures">Probability Measures</a></li>
+  <li><a href="#pure-and-mixed-states" id="toc-pure-and-mixed-states" class="nav-link" data-scroll-target="#pure-and-mixed-states">Pure and Mixed States</a></li>
+  </ul></li>
+  <li><a href="#properties-or-observables" id="toc-properties-or-observables" class="nav-link" data-scroll-target="#properties-or-observables">Properties or Observables</a></li>
+  <li><a href="#symmetries" id="toc-symmetries" class="nav-link" data-scroll-target="#symmetries">Symmetries</a>
+  <ul class="collapse">
+  <li><a href="#conditional-states" id="toc-conditional-states" class="nav-link" data-scroll-target="#conditional-states">Conditional States</a></li>
+  <li><a href="#total-probability-in-classical-and-quantum-conditional-probability" id="toc-total-probability-in-classical-and-quantum-conditional-probability" class="nav-link" data-scroll-target="#total-probability-in-classical-and-quantum-conditional-probability">Total Probability in Classical and Quantum Conditional Probability</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Quantum chance</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>In contrast to other formulations of quantum mechanics, the theory proposed here describes a world of objective chance events.</p>
+<section id="quantum-states" class="level2">
+<h2 class="anchored" data-anchor-id="quantum-states">Quantum States</h2>
+<p>As presented in an earlier post, the properties of a quantum object are represented by self-adjoint operators, and these operators act on the elements of a Hilbert space. The concept of the state of a quantum system or object will now be presented. This concept of state is closely aligned with that in statistical mechanics, but the probabilistic quantum state is a property of an individual object rather than a statistical ensemble. As quantum states generalize classical probabilities, the discussion starts with a brief overview of probability measures.</p>
+<section id="probability-measures" class="level3">
+<h3 class="anchored" data-anchor-id="probability-measures">Probability Measures</h3>
+<p>Classical probability [1] provides a probability measure—a countably additive, <span class="math inline">\([0,1]\)</span>-valued measure—that is a function:</p>
+<p><span class="math display">\[p: B \to [0,1]\]</span></p>
+<p>with domain <span class="math inline">\(B\)</span>, a <span class="math inline">\(\sigma\)</span>-algebra of subsets of the state space <span class="math inline">\(\Omega\)</span>, such that <span class="math inline">\(p(\mathbf{1}) = 1\)</span>, where <span class="math inline">\(\mathbf{1}\)</span> is the identity in the algebra <span class="math inline">\(B\)</span>, and:</p>
+<p><span class="math display">\[p\left(\bigcup_i e_i\right) = \sum_i p(e_i) \quad \text{for pair-wise disjoint elements } e_1, e_2, \dots \text{ in } B.\]</span></p>
+<p>In the case of a system <span class="math inline">\(\mathbf{S}\)</span>, an object more complex than a single particle, the probability function <span class="math inline">\(p\)</span> gives the probabilities over the <span class="math inline">\(\sigma\)</span>-algebra of events for that system as a whole. A physical theory predicts the probabilities of outcomes of any possible situation given the complete initial state.</p>
+<p>States of a system <span class="math inline">\(\mathbf{S}\)</span> in quantum mechanics are, in general, represented by density matrices acting on a Hilbert space, <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>. Density matrices are non-negative, trace-class operators, <span class="math inline">\(\rho\)</span>, of trace <span class="math inline">\(1\)</span>, that is:</p>
+<p><span class="math display">\[\rho = \rho^* \ge 0, \quad \text{with } \text{tr}(\rho)=1.\]</span></p>
+<p>The expectation of a physical quantity, <span class="math inline">\(\hat{X} \in \mathcal{O}_\mathbf{S}\)</span> (the set of properties for the system), at time <span class="math inline">\(t\)</span> in a state given by a density matrix <span class="math inline">\(\rho\)</span> is defined by:</p>
+<p><span class="math display">\[p(X(t)) := \text{tr}(\rho X(t))\]</span></p>
+<p>where <span class="math inline">\(X(t)\)</span> is the operator representing the physical property <span class="math inline">\(\hat{X}(t)\)</span>. This can be extended to all bounded operators in <span class="math inline">\(\mathcal{A}(\mathcal{H}_\mathbf{S})\)</span>, the <span class="math inline">\(*\)</span>-algebra of all bounded operators acting on <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>.</p>
+<p>From the mathematical formulation by Kochen [2], adapted here, there is a one-to-one correspondence between states <span class="math inline">\(p\)</span> on the <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q(\mathcal{H})\)</span> and density operators. The use of the same symbol as for the classical event probability <span class="math inline">\(p(x)\)</span> for the quantum state is because this mathematical description of the quantum state is a generalization of the classical probability model from a single <span class="math inline">\(\sigma\)</span>-algebra to a <span class="math inline">\(\sigma\)</span>-complex. A density operator <span class="math inline">\(\rho\)</span> defines a probability measure <span class="math inline">\(p\)</span> on <span class="math inline">\(Q(\mathcal{H})\)</span>, the <span class="math inline">\(\sigma\)</span>-complex of projections. The converse, that a state <span class="math inline">\(p\)</span> defines a unique density operator <span class="math inline">\(\rho\)</span> on <span class="math inline">\(\mathcal{H}\)</span>, follows from a theorem of Gleason [3]. A state on the lattice of projections on <span class="math inline">\(\mathcal{H}\)</span> defines a unique density operator. A lattice consists of a partially ordered set in which every pair of elements has a unique least upper bound and a unique greatest lower bound.</p>
+</section>
+<section id="pure-and-mixed-states" class="level3">
+<h3 class="anchored" data-anchor-id="pure-and-mixed-states">Pure and Mixed States</h3>
+<p>In Quantum Mechanics, there is a one-to-one correspondence between the pure states of a system and rays of unit vectors <span class="math inline">\(\psi\)</span> in <span class="math inline">\(\mathcal{H}\)</span>, such that <span class="math inline">\(p(X) = (\psi, X \psi)\)</span>. The pure states correspond to one-dimensional projections <span class="math inline">\(\pi_\psi\)</span> (with <span class="math inline">\(\psi\)</span> in the image of <span class="math inline">\(\pi_\psi\)</span>) and <span class="math inline">\(p(X) = \text{tr}(\pi_\psi X) = (\psi, X \psi)\)</span>.</p>
+<p>That even the pure states predict probabilities that are not <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span> is what is to be expected of projections onto property values. A pure state simply predicts the probabilities of property values that can become actual in interactions. Mixed states are mixtures of the pure states, and in general, there is no unique decomposition of a mixed state into pure states.</p>
+</section>
+</section>
+<section id="properties-or-observables" class="level2">
+<h2 class="anchored" data-anchor-id="properties-or-observables">Properties or Observables</h2>
+<p>An observable is nothing more than a property of a quantum object that has a set of possible values that become actual values in interaction with other objects and can appear in various contexts. It need not actually be “observed” in an experiment to do so. In the theory, each such property is represented by a self-adjoint operator that has a spectrum that corresponds to the set of possible property values.</p>
+<p>This concept of property can, as argued above, be treated within the <span class="math inline">\(\sigma\)</span>-complex formulation [2]. Kochen shows that there is a one-to-one correspondence between observables <span class="math inline">\(\omega\)</span> such that:</p>
+<p><span class="math display">\[\omega: B(\mathbb{R}) \to Q(\mathcal{H}),\]</span></p>
+<p>where <span class="math inline">\(B(\mathbb{R})\)</span> is the <span class="math inline">\(\sigma\)</span>-algebra of Borel sets (any set in a topological space that can be formed from open sets, or from closed sets, through the operations of countable union, countable intersection, and relative complement is a <em>Borel set</em>) generated by the open intervals of the real numbers, <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p>Given <span class="math inline">\(\pi_\lambda = \omega((-\infty,\lambda])\)</span>, there is a Hermitian operator <span class="math inline">\(A\)</span> such that:</p>
+<p><span class="math display">\[A=\int \lambda \, d\pi_\lambda.\]</span></p>
+<p>Conversely, given a Hermitian operator <span class="math inline">\(A\)</span> on <span class="math inline">\(\mathcal{H}\)</span>, the spectral decomposition above defines the representation of a property <span class="math inline">\(\omega\)</span> as the spectral measure <span class="math inline">\(\omega(s)= \int_s d\pi_\lambda\)</span>, for <span class="math inline">\(s\in B(\mathbb{R})\)</span>. This establishes the one-to-one correspondence and the equivalence of a key element of the reconstruction to that of standard quantum mechanics.</p>
+<p>It follows that if <span class="math inline">\(\omega: B(\mathbb{R}) \to Q(\Omega)\)</span> is a representation of a property with corresponding self-adjoint operator <span class="math inline">\(X\)</span>, then, for the state <span class="math inline">\(p\)</span> with corresponding density operator <span class="math inline">\(\rho\)</span>, the expectation of <span class="math inline">\(\omega\)</span> is:</p>
+<p><span class="math display">\[\text{Exp}_p(\omega) = \text{tr}(X \rho).\]</span></p>
+<p>The result shows the close connection between the spectrum of an operator and the <span class="math inline">\(\sigma\)</span>-algebra of property values. For instance, for the case of a discrete operator <span class="math inline">\(X\)</span>, the spectral decomposition <span class="math inline">\(X = \sum a_i \pi_i\)</span> defines the <span class="math inline">\(\sigma\)</span>-algebra of property values generated by the set <span class="math inline">\(\{\pi_{i}\}_i\)</span>. Conversely, given the <span class="math inline">\(\sigma\)</span>-algebra of property values, the elements of the set <span class="math inline">\(\{\pi_i\}_i\)</span> allow the definition, for each sequence of real numbers <span class="math inline">\(a_i\)</span>, of the Hermitian operator <span class="math inline">\(\sum a_i \pi_i\)</span>.</p>
+</section>
+<section id="symmetries" class="level2">
+<h2 class="anchored" data-anchor-id="symmetries">Symmetries</h2>
+<p>In the standard formulation of quantum physics, symmetries appear as unitary transformations of Hilbert space vectors or Hermitian operators. Here they also appear naturally as symmetries of a <span class="math inline">\(\sigma\)</span>-complex.</p>
+<p>An automorphism of a <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q\)</span> is a one-to-one transformation <span class="math inline">\(\alpha: Q\to Q\)</span> of <span class="math inline">\(Q\)</span> onto <span class="math inline">\(Q\)</span> such that for every <span class="math inline">\(\sigma\)</span>-algebra <span class="math inline">\(B\)</span> in <span class="math inline">\(Q\)</span> and all <span class="math inline">\(e, e_1, e_2, \dots\)</span> in every <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[\alpha(e^\bot)=\alpha(e)^\bot \quad \text{and} \quad \alpha \left(\sum_i e_i\right)=\sum_i \alpha(e_i),\]</span></p>
+<p>where <span class="math inline">\(\bot\)</span> denotes the orthogonal complement.</p>
+<p>There is a one-to-one correspondence between symmetries <span class="math inline">\(\alpha: Q(\mathcal{H}) \to Q(\mathcal{H})\)</span> and unitary operators <span class="math inline">\(u\)</span> on <span class="math inline">\(\mathcal{H}\)</span> such that <span class="math inline">\(\alpha(X) = uXu^{-1}\)</span>, for all <span class="math inline">\(X \in Q(\mathcal{H})\)</span>. If a state <span class="math inline">\(p\)</span> corresponds to the density operator <span class="math inline">\(\rho\)</span>, then:</p>
+<p><span class="math display">\[p_\alpha(X) = p(\alpha^{-1} (X)) = \text{tr}(\rho u^{-1} Xu) = \text{tr}(u \rho u^{-1}X) \qquad \text{(*)}\]</span></p>
+<p>so that the state <span class="math inline">\(p_\alpha\)</span> corresponds to the density operator <span class="math inline">\(u \rho u^{-1}\)</span>. This shows the mathematical equivalence between the <span class="math inline">\(\sigma\)</span>-complex and the density matrix formulations under symmetry transformation.</p>
+<p>Now that the mathematical formalism in terms of <span class="math inline">\(\sigma\)</span>-complexes has been presented, it is possible to develop a theory that describes the micro-physical world as governed by quantum chance. By chance is meant objective probability that is a physical property of objects in the real sphere rather than a description of uncertainty in the epistemic sphere. This will, among other attributes, allow the derivation of the quantum conditional probability that provides an explanation of quantum state reduction.</p>
+<p>In standard quantum mechanics, the term “reduction” usually means the reduction of the wavefunction and so is conceptually tied to the Schrödinger picture. Although there is a mathematical equivalence between the Schrödinger picture and the formalism developed in this paper, the state as a set of probability measures on a <span class="math inline">\(\sigma\)</span>-complex of projection operators describes a physics of dispositions rather than waves in either real space or some more abstract space. As such, the position is closer to that of matrix mechanics of early quantum physics, but with more ontological detail on the role of probabilities.</p>
+<section id="conditional-states" class="level3">
+<h3 class="anchored" data-anchor-id="conditional-states">Conditional States</h3>
+<p>State reduction is a phenomenon that may seem unique to quantum mechanics and has no counterpart in classical mechanics, but this is not the case. Conditional probability plays that role classically, but the objective ensemble or relative frequency interpretations of probability are available, which means that no conceptual problem is posed by the “reduction” of the probability distribution. With this in mind, conditional probability will now be generalized to quantum mechanics.</p>
+<p>If <span class="math inline">\(p\)</span> is a state on <span class="math inline">\(Q(\mathcal{H})\)</span> and <span class="math inline">\(Y\)</span> a projection operator in <span class="math inline">\(Q(\mathcal{H})\)</span> such that <span class="math inline">\(p(Y) \ne 0\)</span>, then it will be shown that there exists a unique state <span class="math inline">\(p(\,\cdot \mid Y)\)</span> conditional on <span class="math inline">\(Y\)</span>. If <span class="math inline">\(\rho\)</span> is the density operator corresponding to <span class="math inline">\(p\)</span>, then to see that the operator <span class="math inline">\(Y\rho Y/\text{tr}(Y \rho Y)\)</span> corresponds to the state <span class="math inline">\(p(\,\cdot \mid Y)\)</span>, note that if <span class="math inline">\(X\)</span> lies in the same <span class="math inline">\(\sigma\)</span>-algebra as <span class="math inline">\(Y\)</span>, then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> commute, so:</p>
+<p><span class="math display">\[\begin{aligned}
+\text{tr}(Y \rho YX)/ \text{tr}(Y \rho Y) &amp;= \text{tr}(\rho XY)/ \text{tr}(\rho Y) \\
+&amp;= p(X \cdot Y)/p(Y) \\
+&amp;= p(X \mid Y),
+\end{aligned}\]</span></p>
+<p>which is the standard form for conditional probability. It is proposed that the expression:</p>
+<p><span class="math display">\[p(X\mid Y) = \text{tr}(Y \rho YX)/ \text{tr}(Y \rho Y) \qquad \text{(**)}\]</span></p>
+<p>generalizes the conditional probability state to the case when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> do not commute.</p>
+<p>The mapping of <span class="math inline">\(\rho\)</span> to <span class="math inline">\(Y \rho Y/ \text{tr}(\rho Y)\)</span> is the formula for the reduction of state given by the von Neumann-Lüders Projection Rule [4]. In standard quantum mechanics, this rule is an additional principle appended to quantum mechanics. Here it appears as the unique answer to conditioning a state to a specific projection operator.</p>
+<p>From the symmetry transformation of the state, equation (*):</p>
+<p><span class="math display">\[\begin{aligned}
+p_\alpha (X \mid Y) &amp;= \frac{p_\alpha (X Y)}{p_\alpha(Y)} \\
+&amp;= \frac{p (\alpha^{-1}(X Y))}{p(\alpha^{-1}(Y))} \\
+&amp;= \frac{p (\alpha^{-1}(X) \alpha^{-1}(Y))}{p(\alpha^{-1}(Y))} \\
+&amp;= p(\alpha^{-1}( X) \mid \alpha^{-1}(Y))
+\end{aligned}\]</span></p>
+<p>The results in this subsection hold when <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are in the same commutative von Neumann sub-algebra corresponding to a sub-<span class="math inline">\(\sigma\)</span>-algebra of <span class="math inline">\(Q(\mathcal{H})\)</span>. The next subsection covers the more interesting case of when they are in different sub-algebras and there is a correction to the form of the conditional probability that is well known from classical probability.</p>
+</section>
+<section id="total-probability-in-classical-and-quantum-conditional-probability" class="level3">
+<h3 class="anchored" data-anchor-id="total-probability-in-classical-and-quantum-conditional-probability">Total Probability in Classical and Quantum Conditional Probability</h3>
+<p>The Law of Total Probability (or Law of Alternatives in the discrete case, as here) provides a useful method to partition and analyze conditional probabilities. Firstly, in the classical case, let <span class="math inline">\(Y_1, Y_2, \dots\)</span> lie in a <span class="math inline">\(*\)</span>-algebra of commuting projection operators with <span class="math inline">\(Y_i Y_j= 0\)</span> for <span class="math inline">\(i \ne j\)</span>, and let <span class="math inline">\(Y=\sum_i Y_i\)</span>, then:</p>
+<p><span class="math display">\[\begin{aligned}
+p(X \mid Y) &amp;= p\left(\sum_i (X Y_i)\right)/p(Y) \\
+&amp;= \sum_i (p(X Y_i)/p(Y_i)) (p(Y_i)/p(Y)) \\
+&amp;= \sum_i p(X \mid Y_i)p(Y_i \mid Y)
+\end{aligned}\]</span></p>
+<p>Not only is this partition useful, but it also displays clearly how the quantum case differs from the classical.</p>
+<p>From equation (**), above:</p>
+<p><span class="math display">\[\begin{aligned}
+p(X \mid Y) &amp;= \text{tr}(Y\rho Y X)/ \text{tr}(\rho Y) \\
+&amp;= \text{tr}\left(\sum_{i,j} Y_i \rho Y_j X\right) / \text{tr}(\rho Y) \\
+&amp;= \sum_i \text{tr}(Y_i \rho Y_i X)/ \text{tr}(\rho Y) + \sum_{i\ne j} \text{tr}(Y_i \rho Y_j X)/ \text{tr}(\rho Y) \\
+&amp;= \sum_i p(X \mid Y_i)p(Y_i\mid Y) + \sum_{i\ne j} \text{tr}(Y_i \rho Y_j X)/ \text{tr}(\rho Y).
+\end{aligned}\]</span></p>
+<p>This shows that for conditional properties, an interference term must be added to the classical law of total probability. When <span class="math inline">\(X\)</span> commutes with each <span class="math inline">\(Y_i\)</span>, the interference term is zero.</p>
+<p>A measurement of a property is the most familiar example of conditioning with respect to several properties. If a property represented by an operator <span class="math inline">\(A\)</span> has a spectral decomposition <span class="math inline">\(\sum_i a_i \pi_{i}\)</span>, then measuring the observable amounts to registering the values of the properties given by the <span class="math inline">\(\pi_{i}\)</span>. The interaction algebra <span class="math inline">\(B_A\)</span> is that generated by the <span class="math inline">\(\pi_{i}\)</span>.</p>
+<p>Conditioning can be used to define the context for the dynamics of a quantum object. In general, this requires the notion of conditioning with respect to several conditions.</p>
+<p>Given a system with <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q\)</span> and disjoint elements <span class="math inline">\(Y_1, Y_2, \dots\)</span> in a common <span class="math inline">\(\sigma\)</span>-algebra in <span class="math inline">\(Q\)</span> with <span class="math inline">\(\sum_i Y_i=\mathbf{1}\)</span>, and a state <span class="math inline">\(p\)</span>, the state conditional on <span class="math inline">\(Y_1, Y_2, \dots\)</span> is defined to be <span class="math inline">\(p(\,\cdot \mid Y_1, Y_2, \dots) = \sum p(Y_i)p(\,\cdot \mid Y_i)\)</span>. This can be written more compactly as <span class="math inline">\(p(\,\cdot \mid B_A)\)</span>, the state conditional on the interaction algebra <span class="math inline">\(B_A\)</span>.</p>
+<p>For a quantum system, with <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q(\mathcal{H})\)</span> and if <span class="math inline">\(\rho\)</span> is the density operator corresponding to the state <span class="math inline">\(p\)</span>:</p>
+<p><span class="math display">\[p(\cdot \mid B_A) = \sum \text{tr}(\rho Y_i)(Y_i\rho Y_i/ \text{tr}(\rho Y_i)) = \sum Y_i \rho Y_i,\]</span></p>
+<p>so that for each <span class="math inline">\(X\)</span> the probability <span class="math inline">\(p(X \mid B_A) = \sum_i \text{tr}(Y_i\rho Y_i X)\)</span>.</p>
+<p>The natural definition for applying a symmetry to the conditioned state is given by:</p>
+<p><span class="math display">\[p_\alpha (X \mid B_A) = p(\alpha^{-1}(X)\mid \alpha^{-1}(B_A)).\]</span></p>
+<p>The <span class="math inline">\(\sigma\)</span>-algebra <span class="math inline">\(B_A\)</span> generated by the <span class="math inline">\(Y_1, Y_2, \dots\)</span> is simply a sub-algebra of the <span class="math inline">\(\sigma\)</span>-complex.</p>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>There is an equivalence between quantum states and the probabilities describing objective chance. That we are dealing with a generalization of probability theory is made evident in the equation for the conditional probability that introduces extra terms due to quantum interference.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><strong>[1]</strong> Andrey N. Kolmogorov. <em>Foundations of Probability Theory</em>. New York, 1950.</p>
+<p><strong>[2]</strong> Simon Kochen. <em>A Reconstruction of Quantum Mechanics</em>. In: ArXiv e-prints (June 2015).</p>
+<p><strong>[3]</strong> A. M. Gleason. <em>Measures on the Closed Subspaces of a Hilbert Space</em>. In: J. Math. &amp; Mech. 6 (1957), p.&nbsp;883.</p>
+<p><strong>[4]</strong> Gerhardt Lüders. <em>Über die Zustandsänderung durch den Messprozess</em>. In: Annalen der Physik 8 (1951), pp.&nbsp;322-328.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/RobertJ55\.github\.io\/Ontological-Investigations\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
