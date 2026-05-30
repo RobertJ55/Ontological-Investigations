@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ontological Investigations – Ontological-Investigations</title>
+<title>A Relational Reconstruction of Quantum Mechanics – Ontological-Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,8 +71,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -82,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ontological-Investigations</span>
     </a>
   </div>
@@ -93,11 +122,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About this site</span></a>
   </li>  
 </ul>
@@ -116,11 +145,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link active" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#dispositions-and-powers" id="toc-dispositions-and-powers" class="nav-link" data-scroll-target="#dispositions-and-powers">Dispositions and powers</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#quantum-physics" id="toc-quantum-physics" class="nav-link" data-scroll-target="#quantum-physics">Quantum Physics</a></li>
+  <li><a href="#proposition" id="toc-proposition" class="nav-link active" data-scroll-target="#proposition">Proposition</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -129,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
+<h1 class="title">A Relational Reconstruction of Quantum Mechanics</h1>
 </div>
 
 
@@ -146,45 +172,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="layered-ontology" class="level1">
-<h1>Layered ontology</h1>
-<p><img src="./images/Layers.jpg" class="img-fluid"></p>
+<p>The mathematical formulation to be discussed here is a modification of Kochen’s Reconstruction of Quantum Mechanics [1]. It concentrates on a mathematical formulation using a union of <span class="math inline">\(\sigma\)</span>-algebras that he calls a <strong>complex</strong>. In Kochen’s reformulation, it is through the interaction of a quantum system under consideration with another system that properties gain physical values. Such properties are said by Kochen to be <strong>relational</strong> or <strong>extrinsic</strong>, as opposed to fixed intrinsic properties such as the charge of an electron.</p>
+<p>While the mathematics depends heavily on the reconstruction by Kochen, it makes use of <strong>von Neumann <span class="math inline">\(*\)</span>-algebras</strong> (see Thirring [2]) rather than the Boolean algebras used by Kochen. This choice is made to avoid any hint of a logical interpretation. This formulation also differs from Kochen’s in the treatment and assignment of both intrinsic and extrinsic properties. The extrinsic properties will be treated here as an actualization of potential, <a href="../index_files/The ontology of dispositions.html">dispositional properties</a> of the quantum entity that are shaped by its context.</p>
+<p>In the mathematical formulation of quantum mechanics, a physical system, <span class="math inline">\(\mathbf{S}\)</span>, is characterized by a list of properties (called observables in standard quantum mechanics) that can be represented by abstract self-adjoint operators:</p>
+<p><span class="math display">\[\mathcal{O}_\mathbf{S}=\{ \hat{X}_i = \hat{X}^*_i \mid i \in \mathcal{I}_\mathbf{S}\},\]</span></p>
+<p>with <span class="math inline">\(\mathcal{I}_\mathbf{S}\)</span> a set of indices depending on <span class="math inline">\(\mathbf{S}\)</span>, where every operator <span class="math inline">\(\hat{X} \in \mathcal{O}_\mathbf{S}\)</span> represents a physical property characteristic of <span class="math inline">\(\mathbf{S}\)</span>, such as the total momentum, energy, or spin of all particles localized in some bounded region of physical space and belonging to an ensemble of (possibly infinitely many) particles constituting the system <span class="math inline">\(\mathbf{S}\)</span>.</p>
+<p>At every time <span class="math inline">\(t\)</span>, there is a representation of <span class="math inline">\(\mathcal{O}_\mathbf{S}\)</span> by self-adjoint operators acting on a separable Hilbert space <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>:</p>
+<p><span class="math display">\[\mathcal{O}_\mathbf{S} \ni \hat{X}_i \mapsto X_i = X^*_i \in \mathcal{A}(\mathcal{H}_\mathbf{S}),\]</span></p>
+<p>where <span class="math inline">\(\mathcal{A}(\mathcal{H}_\mathbf{S})\)</span> is the <span class="math inline">\(*\)</span>-algebra of all bounded operators acting on <span class="math inline">\(\mathcal{H}_\mathbf{S}\)</span>.</p>
+<p>In general, the operators in the <span class="math inline">\(*\)</span>-algebra do not all commute. This has deep physical consequences:</p>
 <ul>
-<li><a href="./index_files/Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./index_files/strata.html">Strata of being</a></li>
+<li>Properties that cannot appear together are represented in quantum mechanics by self-adjoint operators that do not all commute.</li>
+<li>The sets of operators that do commute provide a set of properties for a measurable mathematical structure which is a <strong><span class="math inline">\(\sigma\)</span>-algebra</strong>.</li>
 </ul>
+<p>The <span class="math inline">\(\sigma\)</span>-algebra is essential to constructing mathematical probability models using the Kolmogorov axiomization [3]. Therefore, each collection of commuting observables of the object has an associated <span class="math inline">\(\sigma\)</span>-algebra. So, a collection of <span class="math inline">\(\sigma\)</span>-algebras that together capture all the property values associated with the object covers all possible events for that object in itself. This structure is the minimal one which contains all the <span class="math inline">\(\sigma\)</span>-algebras arising from all the properties of the particle.</p>
+<p>Each dispositional property of an object, such as spin or position, has a <span class="math inline">\(\sigma-algebra\)</span> of possible values that appear in interaction with other objects. All these <span class="math inline">\(\sigma\)</span>-algebras form a complex property structure for the object under consideration. The formal definition of this notion is as follows:</p>
+<blockquote class="blockquote">
+<p><strong>Definition:</strong> Let <span class="math inline">\(F\)</span> be a family of <span class="math inline">\(\sigma\)</span>-algebras. The <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q_F\)</span> based on <span class="math inline">\(F\)</span> is the union, <span class="math inline">\(\cup B\)</span>, of all <span class="math inline">\(\sigma\)</span>-algebras <span class="math inline">\(B\)</span> lying in <span class="math inline">\(F\)</span>:</p>
+<p><span class="math display">\[Q_F = \bigcup_{B \in F} B.\]</span></p>
+</blockquote>
+<p>Generally, the family <span class="math inline">\(F\)</span> is left implicit, and reference is simply made to a <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q\)</span>; however, the family <span class="math inline">\(F\)</span> does tie the complex to an object that has properties that take values depending on the set of possible interactions that it can have with other objects. Usually, <span class="math inline">\(\sigma\)</span>-complexes that are closed under the formation of sub-<span class="math inline">\(\sigma\)</span>-algebras are discussed. It is possible, in any case, to always close a <span class="math inline">\(\sigma\)</span>-complex by adding all its sub-<span class="math inline">\(\sigma\)</span>-algebras. This complex will include all the possible values that the dispositional properties of a particle can take in all possible interaction contexts. <span class="math inline">\(B\)</span> denotes the <span class="math inline">\(\sigma\)</span>-algebra relating to the property values of a particular (commuting) set of observables of the particle or system.</p>
+<p>In the mathematical formulation of quantum mechanics, <span class="math inline">\(\mathcal{H}\)</span> is a Hilbert space. For the quantum object under consideration, all properties are represented by self-adjoint operators and possible events are represented by projection operators. For pairwise commuting projection operators, closure under the operation of orthogonal complement and countable product <span class="math inline">\(\prod_i \pi_i\)</span> forms a <span class="math inline">\(\sigma\)</span>-algebra. The family of all such <span class="math inline">\(\sigma\)</span>-algebras forms a <span class="math inline">\(\sigma\)</span>-complex, <span class="math inline">\(Q(\mathcal{H})\)</span>, for the object in its possible interaction contexts.</p>
+<section id="proposition" class="level3">
+<h3 class="anchored" data-anchor-id="proposition">Proposition</h3>
+<p><em>In quantum mechanics, the operators representing the possible values of the properties of a system form the <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q(\mathcal{H})\)</span> of projections of the Hilbert space <span class="math inline">\(\mathcal{H}\)</span> of the system.</em></p>
+<p>It has been shown [1] that this proposition holds and the mathematical formalism using <span class="math inline">\(Q(\mathcal{H})\)</span> is equivalent to the standard quantum formulation of the theory on <span class="math inline">\(\mathcal{H}\)</span>. However, the interpretation of the formalism here is that while a quantum object has a complete set of properties, they appear only when the situation invokes the <span class="math inline">\(\sigma\)</span>-algebra in the complex that allows that property to take a specific set of values.</p>
+<hr>
 </section>
-<section id="process-ontology" class="level1">
-<h1>Process ontology</h1>
-<p><img src="./images/process_ont.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Taking Process Philosophy Seriously.html">Taking process philosophy seriously</a></li>
-</ul>
-</section>
-<section id="dispositions-and-powers" class="level1">
-<h1>Dispositions and powers</h1>
-<ul>
-<li><a href="./index_files/The ontology of dispositions.html">The ontology of dispositions</a></li>
-</ul>
-</section>
-<section id="probability-and-potentiality" class="level1">
-<h1>Probability and potentiality</h1>
-<p><img src="./images/Kol_axioms.png" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Potentiality and probability.html">Potentiality and probability</a></li>
-<li><a href="./index_files/The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./index_files/Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-<li><a href="./index_files/The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-</ul>
-</section>
-<section id="quantum-physics" class="level1">
-<h1>Quantum Physics</h1>
-<p><img src="./images/Onto1.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/A Relational Reconstruction of Quantum Mechanics.html">A Relational Reconstruction of Quantum Mechanics</a></li>
-<li><a href="./index_files/Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./index_files/Quantum-chance.html">Quantum chance</a></li>
-</ul>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>[1] Simon Kochen. <em>A Reconstruction of Quantum Mechanics</em>. In: ArXiv e-prints (June 2015).</p>
+<p>[2] Walter Thirring. <em>A Course in Mathematical Physics 3: Quantum Mechanics of Atoms and Molecules</em>. Springer-Verlag, 1979.</p>
+<p>[3] Andrey N. Kolmogorov. <em>Foundations of the Theory of Probability</em>. New York, 1950.</p>
 
 
 </section>
