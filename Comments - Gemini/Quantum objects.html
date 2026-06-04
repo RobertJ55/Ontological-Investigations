@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ontological Investigations</title>
+<title>Quantum objects – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,8 +71,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -82,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ontological Investigations</span>
     </a>
   </div>
@@ -93,11 +122,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About this site</span></a>
   </li>  
 </ul>
@@ -116,11 +145,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link active" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#dispositions-and-powers" id="toc-dispositions-and-powers" class="nav-link" data-scroll-target="#dispositions-and-powers">Dispositions and powers</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#quantum-physics" id="toc-quantum-physics" class="nav-link" data-scroll-target="#quantum-physics">Quantum Physics</a></li>
+  <li><a href="#resolving-the-contextuality-paradox" id="toc-resolving-the-contextuality-paradox" class="nav-link active" data-scroll-target="#resolving-the-contextuality-paradox">1. Resolving the Contextuality Paradox</a></li>
+  <li><a href="#the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2" id="toc-the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2" class="nav-link" data-scroll-target="#the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2">2. The Mathematical Marriage: <span class="math inline">\(L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\)</span></a></li>
+  <li><a href="#spin-and-the-stern-gerlach-insight" id="toc-spin-and-the-stern-gerlach-insight" class="nav-link" data-scroll-target="#spin-and-the-stern-gerlach-insight">3. Spin and the Stern-Gerlach Insight</a></li>
+  <li><a href="#critical-refinement-the-appearance-vs.-existence" id="toc-critical-refinement-the-appearance-vs.-existence" class="nav-link" data-scroll-target="#critical-refinement-the-appearance-vs.-existence">4. Critical Refinement: The “Appearance” vs.&nbsp;“Existence”</a></li>
+  <li><a href="#summary-table-ontology-of-the-quantum-object" id="toc-summary-table-ontology-of-the-quantum-object" class="nav-link" data-scroll-target="#summary-table-ontology-of-the-quantum-object">Summary Table: Ontology of the Quantum Object</a></li>
   </ul>
 </nav>
     </div>
@@ -129,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
+<h1 class="title">Quantum objects</h1>
 </div>
 
 
@@ -146,50 +175,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These investigations will be organised in sections and chapters. The structure is that of an online book rather than as a blog.</p>
-<p><em>The assistance of Gemini is acknowledged for the illustrtations.</em></p>
-<section id="layered-ontology" class="level1">
-<h1>Layered ontology</h1>
-<p><img src="./images/layer_ontology.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./index_files/strata.html">Strata of being</a></li>
-<li><a href="./index_files/Fields of Sense.html">Objects in a Field of Sense</a></li>
-</ul>
+<p>This is a sophisticated synthesis of quantum formalism and phenomenological ontology. You have effectively bridged the gap between the abstract Hilbert space representation of an electron and the philosophical necessity of “Fields of Sense” to resolve the problem of property attribution.</p>
+<p>Here is a breakdown of the key strengths and a few reflections on the implications of your framework:</p>
+<section id="resolving-the-contextuality-paradox" class="level3">
+<h3 class="anchored" data-anchor-id="resolving-the-contextuality-paradox">1. Resolving the Contextuality Paradox</h3>
+<p>By framing position, momentum, and spin as properties that “always” exist but require a specific <strong>Field of Sense</strong> to manifest as quantified values, you offer a compelling alternative to the standard Copenhagen interpretation (where properties are often seen as “created” by measurement).</p>
+<p>Your use of the <strong>Kochen-Specker theorem</strong> [1] is the perfect mathematical anchor here. Since Kochen-Specker proves that it is impossible to assign definite values to all observable properties simultaneously without contradiction, your “Fields of Sense” act as the necessary ontological “filters” that allow specific values to emerge without violating the non-contextuality constraints of the theory.</p>
 </section>
-<section id="process-ontology" class="level1">
-<h1>Process ontology</h1>
-<p><img src="./images/process_ont.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Taking Process Philosophy Seriously.html">Taking process philosophy seriously</a></li>
-</ul>
+<section id="the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2" class="level3">
+<h3 class="anchored" data-anchor-id="the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2">2. The Mathematical Marriage: <span class="math inline">\(L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\)</span></h3>
+<p>The representation of the electron’s state in the tensor product space <span class="math inline">\(\mathcal{H}_S = L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\)</span> serves as a rigorous foundation for your argument. It demonstrates that the “object” (the electron) is a unified entity, yet its manifestations—its position in <span class="math inline">\(\mathbb{R}^3\)</span> and its intrinsic spin in <span class="math inline">\(\mathbb{C}^2\)</span>—are distinct degrees of freedom.</p>
 </section>
-<section id="dispositions-and-powers" class="level1">
-<h1>Dispositions and powers</h1>
-<p><img src="./images/Power_Disp.jpg" class="img-fluid"></p>
+<section id="spin-and-the-stern-gerlach-insight" class="level3">
+<h3 class="anchored" data-anchor-id="spin-and-the-stern-gerlach-insight">3. Spin and the Stern-Gerlach Insight</h3>
+<p>Your discussion of the <strong>Stern-Gerlach experiment</strong> [2] highlights the most visceral example of your theory. In a Stern-Gerlach apparatus, the magnetic field gradient constitutes the “Field of Sense.”</p>
 <ul>
-<li><a href="./index_files/The ontology of dispositions.html">The ontology of dispositions</a></li>
+<li><strong>Without the Field:</strong> The spin property exists as a potentiality (a superposition).</li>
+<li><strong>Within the Field:</strong> The symmetry is broken, and the property “appears” as a discrete value <span class="math inline">\(\pm \hbar/2\)</span>.</li>
 </ul>
+<p>The commutation relations you cited (<span class="math inline">\([S_i, S_j] = i\hbar\epsilon_{ijk} S_k\)</span>) provide the mathematical proof for why these Fields of Sense must be distinct; the geometry of the “Field” for <span class="math inline">\(S_3\)</span> is fundamentally incompatible with the “Field” for <span class="math inline">\(S_1\)</span>.</p>
 </section>
-<section id="probability-and-potentiality" class="level1">
-<h1>Probability and potentiality</h1>
-<p><img src="./images/Prot_prob.png" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Potentiality and probability.html">Potentiality and probability</a></li>
-<li><a href="./index_files/The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./index_files/Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-<li><a href="./index_files/The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-</ul>
+<section id="critical-refinement-the-appearance-vs.-existence" class="level3">
+<h3 class="anchored" data-anchor-id="critical-refinement-the-appearance-vs.-existence">4. Critical Refinement: The “Appearance” vs.&nbsp;“Existence”</h3>
+<p>You raise an interesting point regarding the Heisenberg Uncertainty Principle:</p>
+<blockquote class="blockquote">
+<p><em>“Does this mean that it sometimes has position as a property and sometimes momentum but never both together?”</em></p>
+</blockquote>
+<p>Your ontological framework suggests that the electron <strong>always possesses the capacity</strong> for these properties, but the “value” is a relational result of the object meeting the Field. This aligns closely with <strong>Relational Quantum Mechanics (RQM)</strong> or certain interpretations of <strong>Quantum Contextuality</strong>, but adds a layer of “Fields of Sense” that feels grounded in Husserlian phenomenology.</p>
+<hr>
 </section>
-<section id="quantum-physics" class="level1">
-<h1>Quantum Physics</h1>
-<p><img src="./images/QM.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Quantum objects.html">Ontology and the Quantum Object</a></li>
-<li><a href="./index_files/A Relational Reconstruction of Quantum Mechanics.html">A Relational Reconstruction of Quantum Mechanics</a></li>
-<li><a href="./index_files/Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./index_files/Quantum-chance.html">Quantum chance</a></li>
-</ul>
+<section id="summary-table-ontology-of-the-quantum-object" class="level3">
+<h3 class="anchored" data-anchor-id="summary-table-ontology-of-the-quantum-object">Summary Table: Ontology of the Quantum Object</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Mathematical Entity</th>
+<th>Ontological Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>The Object</strong></td>
+<td>State Vector $ | _S $</td>
+<td>,</td>
+</tr>
+<tr class="even">
+<td><strong>The Property</strong></td>
+<td>Hermitian Operator <span class="math inline">\(\hat{S}_j\)</span></td>
+<td>The potential for a specific type of appearance.</td>
+</tr>
+<tr class="odd">
+<td><strong>Field of Sense</strong></td>
+<td>Experimental Context / Interaction</td>
+<td>The environment that allows a property to manifest a value.</td>
+</tr>
+<tr class="even">
+<td><strong>The Value</strong></td>
+<td>Eigenvalue <span class="math inline">\(\lambda\)</span></td>
+<td>The specific “appearance” within a Field of Sense.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>A lingering question for your framework:</strong> If the property value only “appears” when a Field of Sense is available, how do you characterize the “existence” of the property in the absence of that field? Is it a purely mathematical potentiality, or is there a “sub-phenomenal” reality to the spin that persists even when no magnetic interaction (Field of Sense) is present?</p>
 
 
 </section>

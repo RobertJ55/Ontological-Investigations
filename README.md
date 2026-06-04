@@ -1,5 +1,0 @@
-This site will look at a series of ontological challenges and solutions ranging from physical foundations to the contents of cultures.
-
-My guiding principle is that entities have properties and interactions that are independent of whatever anyone or anything knows about them. Experiments are for finding out about the physical world not for instantiating it. That is, the physical world is there even when no one is looking. The discussion will engage with ontologies that deal with an autonomous physical world independent of considerations of what is known about the system or who is interfering with it. However, opposing views will also be considered.
-
-There are quantum theories that focus on what can be known about a physical system rather than what the systems behaviour is per se. The original Copenhagen interpretation of quantum mechanics falls into this category, but a more recent approach is Quantum Bayesianism. Commonly shortened to QBism, it interprets the quantum state as capturing a degree of belief. There are questions about the ontological assumptions associated with the theory, with options ranging from a form of idealism to “participatory realism”.

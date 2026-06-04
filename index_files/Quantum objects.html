@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Robert Johnston">
+<meta name="dcterms.date" content="2026-06-03">
 
-<title>Ontological Investigations</title>
+<title>quantum-objects – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +28,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,8 +73,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -82,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ontological Investigations</span>
     </a>
   </div>
@@ -93,11 +124,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About this site</span></a>
   </li>  
 </ul>
@@ -116,11 +147,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link active" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#dispositions-and-powers" id="toc-dispositions-and-powers" class="nav-link" data-scroll-target="#dispositions-and-powers">Dispositions and powers</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#quantum-physics" id="toc-quantum-physics" class="nav-link" data-scroll-target="#quantum-physics">Quantum Physics</a></li>
+  <li><a href="#introduction-to-physical-ontology" id="toc-introduction-to-physical-ontology" class="nav-link active" data-scroll-target="#introduction-to-physical-ontology">Introduction to Physical Ontology</a></li>
+  <li><a href="#the-problem-of-contextuality" id="toc-the-problem-of-contextuality" class="nav-link" data-scroll-target="#the-problem-of-contextuality">The Problem of Contextuality</a></li>
+  <li><a href="#position-momentum-and-the-field-of-sense" id="toc-position-momentum-and-the-field-of-sense" class="nav-link" data-scroll-target="#position-momentum-and-the-field-of-sense">Position, Momentum, and the Field of Sense</a></li>
+  <li><a href="#mathematical-formulation-of-spin" id="toc-mathematical-formulation-of-spin" class="nav-link" data-scroll-target="#mathematical-formulation-of-spin">Mathematical Formulation of Spin</a>
+  <ul class="collapse">
+  <li><a href="#spin-operators-and-pauli-matrices" id="toc-spin-operators-and-pauli-matrices" class="nav-link" data-scroll-target="#spin-operators-and-pauli-matrices">Spin Operators and Pauli Matrices</a></li>
+  </ul></li>
+  <li><a href="#spin-eigenvalues-and-state-vectors" id="toc-spin-eigenvalues-and-state-vectors" class="nav-link" data-scroll-target="#spin-eigenvalues-and-state-vectors">Spin Eigenvalues and State Vectors</a></li>
+  <li><a href="#non-commutativity-and-interaction" id="toc-non-commutativity-and-interaction" class="nav-link" data-scroll-target="#non-commutativity-and-interaction">Non-Commutativity and Interaction</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -129,14 +167,25 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Robert Johnston </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 3, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -146,52 +195,65 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These investigations will be organised in sections and chapters. The structure is that of an online book rather than as a blog.</p>
-<p><em>The assistance of Gemini is acknowledged for the illustrtations.</em></p>
-<section id="layered-ontology" class="level1">
-<h1>Layered ontology</h1>
-<p><img src="./images/layer_ontology.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./index_files/strata.html">Strata of being</a></li>
-<li><a href="./index_files/Fields of Sense.html">Objects in a Field of Sense</a></li>
-</ul>
+<section id="introduction-to-physical-ontology" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-physical-ontology">Introduction to Physical Ontology</h2>
+<p>Quantum mechanics is part of physics and experimentation is an activity in physics. Therefore, the entities of interest in physics must be observable to some extent. They must make an appearance. That is, entities of interest must be <strong>objects</strong>; they appear in at least one <a href="../index_files/Fields of Sense.html"><strong>field of sense</strong></a>.</p>
+<p>The ontological framework for the discussion will be that quantum objects are physical objects that have some properties that can appear in one of a collection of fields of sense. To move from ontology to physical theory, an explanatory structure is needed and, when possible, a mathematical formulation is adopted that describes the behavior of the quantum objects in a precise way.</p>
 </section>
-<section id="process-ontology" class="level1">
-<h1>Process ontology</h1>
-<p><img src="./images/process_ont.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Taking Process Philosophy Seriously.html">Taking process philosophy seriously</a></li>
-</ul>
+<section id="the-problem-of-contextuality" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-of-contextuality">The Problem of Contextuality</h2>
+<p>There are puzzling and paradoxical effects of quantum mechanics, be they the thought experiments of Einstein, Podolsky and Rosen (EPR) or Wigner’s friend with Schrödinger’s cat, or even double-slit experiment. These effects to the need to re-examine what is meant by a <strong>physical property</strong> of an object.</p>
+<p>In quantum mechanics, it is known that all properties need a specific context in which to appear as quantified values. This is known to be the case in general from the work of <strong>Kochen and Specker [1]</strong>, but has been a common understanding among physicists based on insights obtained from experiments such as that of <strong>Stern and Gerlach [2]</strong>.</p>
 </section>
-<section id="dispositions-and-powers" class="level1">
-<h1>Dispositions and powers</h1>
-<p><img src="./images/Power_Disp.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/The ontology of dispositions.html">The ontology of dispositions</a></li>
-</ul>
+<section id="position-momentum-and-the-field-of-sense" class="level2">
+<h2 class="anchored" data-anchor-id="position-momentum-and-the-field-of-sense">Position, Momentum, and the Field of Sense</h2>
+<p>Before moving on to spin, consider the <strong>Heisenberg Uncertainty Principle</strong>, which is usually taken to mean that an electron, for example, cannot have a precise value of its position and its momentum at the same time.</p>
+<blockquote class="blockquote">
+<p><strong>Question:</strong> Does this mean that it sometimes has position as a property and sometimes momentum but never both together?</p>
+</blockquote>
+<p>That understanding of the theory would mean that these properties are of the context rather than the object of the experiment. According to the ontology of objects and their properties being developed here, a particle (such as an electron) always has the properties of position and momentum, represented by an operator, but these properties take values by appearing in distinct <strong>Fields of Sense</strong>. This means that the context in which the particle position takes a value is different from that in which its momentum takes a value.</p>
 </section>
-<section id="probability-and-potentiality" class="level1">
-<h1>Probability and potentiality</h1>
-<p><img src="./images/Prot_prob.png" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Potentiality and probability.html">Potentiality and probability</a></li>
-<li><a href="./index_files/The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./index_files/Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-<li><a href="./index_files/The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-</ul>
+<section id="mathematical-formulation-of-spin" class="level2">
+<h2 class="anchored" data-anchor-id="mathematical-formulation-of-spin">Mathematical Formulation of Spin</h2>
+<p>We now consider a particle with spin <span class="math inline">\(1/2\)</span> (an electron) situated and free to move in three dimensions. Following Faddeev and Yakubovskii [3], the electron combines its spin Hilbert space (<span class="math inline">\(\mathbb{C}^2\)</span>) with that associated with the electron’s movement in three dimensions (<span class="math inline">\(\mathbb{R}^3\)</span>).</p>
+<p>The Hilbert space <span class="math inline">\(\mathcal{H}\)</span> for the electron’s position and momentum is the space <span class="math inline">\(L^2(\mathbb{R}^3)\)</span> of square-integrable complex-valued functions. In mathematical notation, the state space with spin becomes the enlarged Hilbert space:</p>
+<p><span class="math display">\[\mathcal{H}_S = L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\]</span></p>
+<p>This captures the intuition that the state function becomes a pair of complex-valued <span class="math inline">\(L^2(\mathbb{R}^3)\)</span> functions. For a pure state <span class="math inline">\(\Psi(x)\)</span> in <span class="math inline">\(\mathcal{H}\)</span>, there are two orthogonal states in <span class="math inline">\(\mathcal{H}_S\)</span>:</p>
+<p><span class="math display">\[\Psi_{\uparrow} = \begin{pmatrix} \Psi(x) \\ 0 \end{pmatrix} , \, \Psi_{\downarrow} = \begin{pmatrix} 0 \\ \Psi(x) \end{pmatrix}\]</span></p>
+<section id="spin-operators-and-pauli-matrices" class="level3">
+<h3 class="anchored" data-anchor-id="spin-operators-and-pauli-matrices">Spin Operators and Pauli Matrices</h3>
+<p>Focusing on the spin property <span class="math inline">\(\hat{S}\)</span>, a self-adjoint operator <span class="math inline">\(S\)</span> on <span class="math inline">\(\mathbb{C}^2\)</span> can be represented as the linear combination of the identity matrix <span class="math inline">\(I\)</span> and the <strong>Pauli matrices</strong>:</p>
+<p><span class="math display">\[I = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}, \sigma_1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \sigma_2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}\]</span></p>
+<p>Quantum physics is brought into this mathematics by introducing the Planck constant <span class="math inline">\(\hbar\)</span> and defining the self-adjoint spin-<span class="math inline">\(1/2\)</span> operators as:</p>
+<p><span class="math display">\[S_j = \frac{\hbar}{2} \sigma_j, \quad j = 1, 2, 3 \qquad (1)\]</span></p>
+<p>These follow the angular momentum commutation relations:</p>
+<p><span class="math display">\[[S_1, S_2] = i\hbar S_3, \quad [S_2, S_3] = i\hbar S_1, \quad [S_3, S_1] = i\hbar S_2\]</span></p>
 </section>
-<section id="quantum-physics" class="level1">
-<h1>Quantum Physics</h1>
-<p><img src="./images/QM.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Quantum objects.html">Ontology and the Quantum Object</a></li>
-<li><a href="./index_files/A Relational Reconstruction of Quantum Mechanics.html">A Relational Reconstruction of Quantum Mechanics</a></li>
-<li><a href="./index_files/Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./index_files/Quantum-chance.html">Quantum chance</a></li>
-</ul>
+</section>
+<section id="spin-eigenvalues-and-state-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="spin-eigenvalues-and-state-vectors">Spin Eigenvalues and State Vectors</h2>
+<p>The operators <span class="math inline">\(S_j\)</span> have eigenvalues <span class="math inline">\(\pm \hbar/2\)</span>, which are the admissible values of the projections of the spin on some direction. The vectors</p>
+<p><span class="math display">\[\Psi_{\uparrow} = \begin{pmatrix} \Psi(x) \\ 0 \end{pmatrix} \quad \text{and} \quad \Psi_{\downarrow} = \begin{pmatrix} 0 \\ \Psi(x) \end{pmatrix}\]</span></p>
+<p>are eigenvectors of the operator <span class="math inline">\(S_3\)</span> with eigenvalues <span class="math inline">\(+\hbar/2\)</span> and <span class="math inline">\(-\hbar/2\)</span>.</p>
+<p>The eigenvectors of <span class="math inline">\(S_1\)</span> and <span class="math inline">\(S_2\)</span> are linear combinations of <span class="math inline">\(\Psi_{\uparrow}\)</span> and <span class="math inline">\(\Psi_{\downarrow}\)</span>. Therefore, these vectors describe states with a definite value of the third projection of the spin. Similar constructions can be made for the other spin components.</p>
+</section>
+<section id="non-commutativity-and-interaction" class="level2">
+<h2 class="anchored" data-anchor-id="non-commutativity-and-interaction">Non-Commutativity and Interaction</h2>
+<p>As the components do not commute, they cannot simultaneously take precise values in all components. The spin will appear to interact with some other object, involving a magnetic interaction, to take a value of <span class="math inline">\(+\hbar/2\)</span> or <span class="math inline">\(-\hbar/2\)</span>. Independent of the direction defined by the interaction, the possible values the spin property can take are <span class="math inline">\(\pm \hbar/2\)</span>, with probabilities determined by the state of the electron. The probabilities of <span class="math inline">\(\pm \hbar/2\)</span> appearing sum to one.</p>
+<p>The property values appear when the appropriate <strong>Field of Sense</strong> is available. However, in relation to this point it should be noted that the isolated system has properties represented by Hermitian operators, such as the spin-<span class="math inline">\(1/2\)</span> <span class="math inline">\(S_j\)</span>, that have eigenvalues <span class="math inline">\(\pm \frac{1}{2}\hbar\)</span> even in the absence of any interaction term coupling it to another object.</p>
+<p>The spin values are quantitative characteristics of the spin property, but the values will only actually <strong>appear</strong> once the appropriate Field of Sense is available to provide a context for an interaction with another object.</p>
+<p>The spin will appear to interact with some other object (involving a magnetic interaction) to take a value. A <strong>Field of Sense</strong> affords a context for the appearance of properties of the quantum object. The values only actually appear once the appropriate Field of Sense is available to provide a context for an interaction with another object.</p>
+<hr>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ol type="1">
+<li><strong>Kochen, S. and Specker, E. P.</strong> (1967). <em>The Problem of Hidden Variables in Quantum Mechanics</em>. J. Math. &amp; Mech. 17, p.&nbsp;59.</li>
+<li><strong>Gerlach, W. and Stern, O.</strong> (1922). <em>Der experimentelle Nachweis der Richtungsquantelung in Magnetfeld</em>. Zeitschrift für Physik, pp.&nbsp;349-352.</li>
+<li><strong>Faddeev, L. D. and Yakubovskii, O. A.</strong> (2000). <em>Lectures on Quantum Mechanics for Mathematics Students</em>. American Mathematical Society.</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
